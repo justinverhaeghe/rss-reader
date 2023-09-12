@@ -29,12 +29,13 @@ function fnFeed(string $url, int $nbArticles)
 
             $title = (string) $item->title;
             $date = (string) $item->pubDate;
+            $description = (string) $item->description;
             foreach ($item->children('media', true) as $k => $v) {
                 $attributes = $v->attributes();
                 $imageUrl = (string) $attributes->url;
             }
             $link = (string) $item->link;
-            $article = [$title, $date, $imageUrl, $link];
+            $article = [$title, $date, $imageUrl, $link, $description];
             array_push($articles, $article);
             if (count($articles) == $nbArticles) {
                 return $articles;
