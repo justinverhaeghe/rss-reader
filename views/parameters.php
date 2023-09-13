@@ -7,31 +7,31 @@
             <form method="post" id="settingsForm">
                 <div class=" row">
                     <div class="col-12 checkboxInput">
-                        <input type="checkbox" name="figaro" id="figaro">
+                        <input type="checkbox" name="choicesFeed[]" id="figaro" value="figaro">
                         <label for="figaro">
                             <img src="/public/assets/img/figaro.png" alt="logo figaro" class="img-fluid mb-3">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="lemonde" id="lemonde">
+                        <input type="checkbox" name="choicesFeed[]" id="lemonde" value="lemonde">
                         <label for="lemonde">
                             <img src="/public/assets/img/lemonde.png" alt="logo lemonde" class="img-fluid mb-3">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="zdnet" id="zdnet">
+                        <input type="checkbox" name="choicesFeed[]" id="zdnet" value="zdnet">
                         <label for="zdnet">
                             <img src="/public/assets/img/zdnet.png" alt="logo zdnet" class="img-fluid mb-3">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="lesechos" id="lesechos">
+                        <input type="checkbox" name="choicesFeed[]" id="lesechos" value="lesechos">
                         <label for="lesechos">
                             <img src="/public/assets/img/lesechos.png" alt="logo lesechos" class="img-fluid mb-3">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="cnet" id="cnet">
+                        <input type="checkbox" name="choicesFeed[]" id="cnet" value="cnet">
                         <label for="cnet">
                             <img src="/public/assets/img/cnet.png" alt="logo cnet" class="img-fluid mb-3">
                         </label>
@@ -40,8 +40,7 @@
                     <div class="col-12 text-center mb-3">
                         <h3>Nombre d'articles</h3>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" value="six" type="radio" name="nbrArticles" id="six"
-                                checked>
+                            <input class="form-check-input" value="six" type="radio" name="nbrArticles" id="six" checked>
                             <label class="form-check-label" for="six">
                                 6
                             </label>
@@ -61,7 +60,7 @@
                     </div>
 
                     <div class="col-12 mb-3">
-                        <button type="button" class="btn btn-outline-light">Soumettre</button>
+                        <button type="submit" class="btn btn-outline-light">Soumettre</button>
                     </div>
                 </div>
             </form>
