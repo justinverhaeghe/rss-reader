@@ -11,19 +11,19 @@
             <h2 class="text-center pt-3 parameters">Nombres d'articles</h2>
             <form action="" method="get" class="mb-3 pt-1 d-flex justify-content-center parameters">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="six">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="six" value="6">
                     <label class="form-check-label" for="six">
                         6
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="nine">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="nine" value="9">
                     <label class="form-check-label" for="nine">
                         9
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="twelve">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="twelve" value="12">
                     <label class="form-check-label" for="twelve">
                         12
                     </label>

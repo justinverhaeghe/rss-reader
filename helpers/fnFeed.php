@@ -31,11 +31,11 @@ function fnFeed(string $url, int $nbArticles)
             $date = (string) $item->pubDate;
             $description = (string) $item->description;
             foreach ($item->children('media', true) as $k => $v) {
-                $attributes = $v->attributes();
-                $imageUrl = (string) $attributes->url;
+                $imageUrl = (string) $v->attributes()->url;
+                $imageAlt = (string) $v->description;
             }
             $link = (string) $item->link;
-            $article = [$title, $date, $imageUrl, $link, $description];
+            $article = [$title, $date, $imageUrl, $link, $description, $imageAlt];
             array_push($articles, $article);
             if (count($articles) == $nbArticles) {
                 return $articles;

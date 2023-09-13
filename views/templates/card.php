@@ -2,7 +2,7 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="<?= $imageUrl ?>" class="img-fluid rounded-start" alt="<?= 'image' . $title ?>">
+                <img src="<?= $imageUrl ?>" class="img-fluid rounded-start" alt="<?= $imageAlt ?>">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
