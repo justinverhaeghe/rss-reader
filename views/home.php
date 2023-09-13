@@ -1,6 +1,5 @@
 <?php 
 $display = $_COOKIE['nbrArticles'] ?? '6';
-var_dump($display);
 ?>
 <div class="container-fluid">
     <div class="row">
