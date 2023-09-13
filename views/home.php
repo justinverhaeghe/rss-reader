@@ -1,3 +1,6 @@
+<?php 
+$display = $_COOKIE['nbrArticles'] ?? '6';
+?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12" id="feeds">
@@ -14,19 +17,19 @@
             <h2 class="text-center pt-3 parameters fs-5">Nombres d'articles</h2>
             <form action="" method="get" class="mb-3 pt-1 d-flex justify-content-center parameters">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="six" value="6">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="six" value="6" <?= $display == '6' ? 'checked' : '' ?>>
                     <label class="form-check-label" for="six">
                         6
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="nine" value="9">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="nine" value="9" <?= $display == '9' ? 'checked' : '' ?>>
                     <label class="form-check-label" for="nine">
                         9
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="twelve" value="12">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="twelve" value="12" <?= $display == '12' ? 'checked' : '' ?>>
                     <label class="form-check-label" for="twelve">
                         12
                     </label>
