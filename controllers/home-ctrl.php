@@ -6,29 +6,8 @@ $mediaSelects = [
     '/public/assets/img/zdnet.png' => 'https://www.zdnet.fr/feeds/rss/actualites/internet/',
 ];
 $display = 6;
+$script_js = 'home';
 
 include __DIR__ . '/../views/templates/header.php';
 include __DIR__ . '/../views/home.php';
-$script_js = 'home';
-foreach ($mediaSelects as $key => $value) { ?>
-<div class="d-flex justify-content-center">
-    <img src="<?= $key ?>" alt="<?= 'logo' ?>" class="img-fluid p-3 w-50">
-</div>
-<?php
-    $articles = fnFeed($value, $display);
-    for ($j = 0; $j < $display; $j++) {
-        $title = $articles[$j][0];
-        $date = $articles[$j][1];
-        $imageUrl = $articles[$j][2];
-        $link = $articles[$j][3];
-        $description = $articles[$j][4];
-        $imageAlt = $articles[$j][5];
-        include __DIR__ . '/../views/templates/card.php';
-    }
-}
-
-
-include __DIR__
-    . '/../views/templates/footer.php';
-
-?>
+include __DIR__ . '/../views/templates/footer.php';
