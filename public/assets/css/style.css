@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #c0bdbd;
     color: white;
@@ -38,18 +42,3 @@ footer p {
 label {
     cursor: pointer;
 }
-
-/* @media screen and (min-width: 576px) {
-    .heightContainer {
-        height: 1500px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .heightContainer a {
-        max-height: 250px;
-    }
-    .txt-overflow {
-        text-overflow: ellipsis;
-    }
-} */

@@ -24,7 +24,7 @@
                             id="mainLogo"></a>
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-moon" title="Pas encore opé ;)"></i>
                 </div>
             </div>
         </div>
