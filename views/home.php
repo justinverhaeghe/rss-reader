@@ -4,12 +4,11 @@
             <div class="row align-items-center pt-2">
                 <div class="col-4"><img src="/public/assets/img/figaro.png" alt="logo figaro" class="img-fluid"></div>
                 <div class="col-4"><img src="/public/assets/img/lemonde.png" alt="logo monde" class="img-fluid"></div>
-                <div class="col-4 d-flex justify-content-center"><img src="/public/assets/img/zdnet.png"
-                        alt="logo zdnet" class="img-fluid"></div>
+                <div class="col-4 d-flex justify-content-center"><img src="/public/assets/img/zdnet.png" alt="logo zdnet" class="img-fluid"></div>
             </div>
         </div>
         <div class="mt-2 parameters">
-            <h2 class="text-center pt-3 parameters">Nombres d'articles</h2>
+            <h2 class="text-center pt-3 parameters fs-5">Nombres d'articles</h2>
             <form action="" method="get" class="mb-3 pt-1 d-flex justify-content-center parameters">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="nbrArticles" id="six">
@@ -18,8 +17,8 @@
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nbrArticles" id="six">
-                    <label class="form-check-label" for="six">
+                    <input class="form-check-input" type="radio" name="nbrArticles" id="nine">
+                    <label class="form-check-label" for="nine">
                         9
                     </label>
                 </div>

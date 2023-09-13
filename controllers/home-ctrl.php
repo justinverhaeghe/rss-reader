@@ -12,7 +12,7 @@ include __DIR__ . '/../views/home.php';
 
 foreach ($mediaSelects as $key => $value) { ?>
 <div class="d-flex justify-content-center">
-    <img src="<?= $key ?>" alt="<?= 'logo' ?>" class="img-fluid p-3">
+    <img src="<?= $key ?>" alt="<?= 'logo' ?>" class="img-fluid p-3 w-50">
 </div>
 <?php
     for ($j = 0; $j < $display; $j++) {

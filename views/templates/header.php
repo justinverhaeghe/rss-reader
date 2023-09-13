@@ -15,10 +15,11 @@
     <div class="container-fluid">
         <div class="row pt-3">
             <div class="col-3 d-flex align-items-center justify-content-center">
-                <i class="fa-sharp fa-solid fa-gears"></i>
+                <a href="/controllers/parameters-ctrl.php"><i class="fa-sharp fa-solid fa-gears"></i></a>
             </div>
-            <div class="col-6">
-                <img src="/public/assets/img/logo.png" alt="logo tech feed" class="img-fluid">
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <a href="/index.php"><img src="/public/assets/img/logo.png" alt="logo tech feed" class="img-fluid"
+                        id="mainLogo"></a>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-moon"></i>

@@ -3,6 +3,10 @@ header {
     color: white;
 }
 
+#mainLogo {
+    height: 15vh;
+}
+
 .fa-gears {
     font-size: xx-large;
     color: #303841;
@@ -14,4 +18,23 @@ header {
 .parameters {
     background-color: #303841;
     color: white;
+}
+footer p {
+    font-size: small;
+}
+
+#parametersPage {
+    background-color: #c0bdbd;
+    min-height: 60vh;
+    border-top: 1px solid black;
+    color: white;
+}
+
+.submitBtn {
+    background-color: #303841;
+    color: white;
+}
+
+label {
+    cursor: pointer;
 }
