@@ -20,9 +20,12 @@ if (isset($_POST['choicesFeed'])) {
     setcookie('choicesFeed', json_encode($choicesFeed), (time() + 3600), '/');
 }
 
-echo "<pre>";
-print_r($choicesFeed);
-echo "</pre>";
+if (isset($_POST['nbrArticles'])) {
+    if ($_POST['nbrArticles'] == '6' || $_POST['nbrArticles'] == '9' || $_POST['nbrArticles'] == '12') {
+        setcookie('nbrArticles', $_POST['nbrArticles'], (time() + 3600), '/');
+    }
+}
+
 
 
 include __DIR__ . '/../views/templates/header.php';

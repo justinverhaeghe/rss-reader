@@ -40,19 +40,19 @@
                     <div class="col-12 text-center mb-3">
                         <h3>Nombre d'articles</h3>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" value="six" type="radio" name="nbrArticles" id="six" checked>
+                            <input class="form-check-input" value="6" type="radio" name="nbrArticles" id="six" checked>
                             <label class="form-check-label" for="six">
                                 6
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" value="nine" type="radio" name="nbrArticles" id="nine">
+                            <input class="form-check-input" value="9" type="radio" name="nbrArticles" id="nine">
                             <label class="form-check-label" for="nine">
                                 9
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" value="twelve" type="radio" name="nbrArticles" id="twelve">
+                            <input class="form-check-input" value="12" type="radio" name="nbrArticles" id="twelve">
                             <label class="form-check-label" for="twelve">
                                 12
                             </label>
