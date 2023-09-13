@@ -1,4 +1,6 @@
 <?php
+
+
 require_once __DIR__ . '/../helpers/fnFeed.php';
 $mediaSelects = [
     '/public/assets/img/figaro.png' => 'https://www.lefigaro.fr/rss/figaro_secteur_high-tech.xml',
@@ -11,9 +13,9 @@ include __DIR__ . '/../views/templates/header.php';
 include __DIR__ . '/../views/home.php';
 $script_js = 'home';
 foreach ($mediaSelects as $key => $value) { ?>
-<div class="d-flex justify-content-center">
-    <img src="<?= $key ?>" alt="<?= 'logo' ?>" class="img-fluid p-3 w-50">
-</div>
+    <div class="d-flex justify-content-center">
+        <img src="<?= $key ?>" alt="<?= 'logo' ?>" class="img-fluid p-3 w-50">
+    </div>
 <?php
     $articles = fnFeed($value, $display);
     for ($j = 0; $j < $display; $j++) {
