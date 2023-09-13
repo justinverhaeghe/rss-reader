@@ -1,6 +1,3 @@
-</div>
-</div>
-</div>
 <footer class="text-center p-3">
     <p>By Alicia, Valentin et Justin &copy; 2023</p>
     <p class="mb-3">Projet en cours de réalisation</p>
