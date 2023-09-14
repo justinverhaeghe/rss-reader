@@ -6,38 +6,18 @@
 
             <form method="post" id="settingsForm">
                 <div class=" row">
+                    <?php foreach ($feeds as $key => $feed) { ?>
                     <div class="col-12 checkboxInput">
-                        <input type="checkbox" name="choicesFeed[]" id="figaro" value="figaro">
-                        <label for="figaro">
-                            <img src="/public/assets/img/figaro.png" alt="logo figaro" class="img-fluid mb-3">
+                        <input type="checkbox" class="feed" name="choicesFeed[]" id="<?= $feed['_id'] ?>"
+                            value="<?= $feed['_id'] ?>">
+                        <label for="<?= $feed['_id'] ?>">
+                            <img src="<?= isset($_COOKIE['darkmode']) && ($_COOKIE['darkmode'] == 'dark') ? $feed['imageUrlBlack'] : $feed['imageUrl'] ?>"
+                                alt="logo <?= $feed['_id'] ?>" class="img-fluid mb-3">
                         </label>
                     </div>
-                    <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="choicesFeed[]" id="lemonde" value="lemonde">
-                        <label for="lemonde">
-                            <img src="/public/assets/img/lemonde.png" alt="logo lemonde" class="img-fluid mb-3">
-                        </label>
-                    </div>
-                    <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="choicesFeed[]" id="zdnet" value="zdnet">
-                        <label for="zdnet">
-                            <img src="/public/assets/img/zdnet.png" alt="logo zdnet" class="img-fluid mb-3">
-                        </label>
-                    </div>
-                    <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="choicesFeed[]" id="lesechos" value="lesechos">
-                        <label for="lesechos">
-                            <img src="/public/assets/img/lesechos.png" alt="logo lesechos" class="img-fluid mb-3">
-                        </label>
-                    </div>
-                    <div class="col-12 col-md-6 checkboxInput">
-                        <input type="checkbox" name="choicesFeed[]" id="cnet" value="cnet">
-                        <label for="cnet">
-                            <img src="/public/assets/img/cnet.png" alt="logo cnet" class="img-fluid mb-3">
-                        </label>
-                    </div>
+                    <?php } ?>
 
-                    <div class="col-12 text-center mb-3">
+                    <div class="col-12 col-md-6 text-center mb-3">
                         <h3>Nombre d'articles</h3>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" value="6" type="radio" name="nbrArticles" id="six" checked>
@@ -59,17 +39,23 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="col-8 offset-2 text-center mb-3">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" name="darkmode" type="checkbox" role="switch" id="darkmode" <?= isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark' ? 'checked' : '' ?>>
-                        <label class="form-check-label" for="darkmode">
-                            <h2>Dark Mode</h2>
-                        </label>
+                    <div class="form-check form-switch col-12 col-md-6 text-center mb-3">
+                        <div class="row">
+                            <div class="col-12"><label class="form-check-label" for="darkmode">
+                                    <h3>Dark Mode</h3>
+                                </label></div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <input class="form-check-input" name="darkmode" type="checkbox" role="switch"
+                                    id="darkmode"
+                                    <?= isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark' ? 'checked' : '' ?>>
+                            </div>
+                        </div>
+
+
                     </div>
-                </div>
-                <div class="col-12 mb-3">
-                    <button type="submit" class="btn btn-outline-light">Soumettre</button>
+                    <div class="col-12 mb-3">
+                        <button type="submit" class="btn btn-outline-primary">Soumettre</button>
+                    </div>
                 </div>
             </form>
         </div>

@@ -3,30 +3,35 @@
         "_id": "figaro",
         "feed": "Figaro - High-Tech",
         "url": "https://www.lefigaro.fr/rss/figaro_secteur_high-tech.xml",
-        "imageUrl": "/public/assets/img/figaro.png"
+        "imageUrl": "/public/assets/img/figaro.png",
+        "imageUrlBlack": "/public/assets/img/figaro_black.png"
     },
     {
         "_id": "lemonde",
         "feed": "Le Monde - Technologies",
         "url": "https://www.lemonde.fr/technologies/rss_full.xml",
-        "imageUrl": "/public/assets/img/lemonde.png"
+        "imageUrl": "/public/assets/img/lemonde.png",
+        "imageUrlBlack": "/public/assets/img/lemonde_black.png"
     },
     {
         "_id": "zdnet",
         "feed": "ZdNet - Internet",
         "url": "https://www.zdnet.fr/feeds/rss/actualites/internet/",
-        "imageUrl": "/public/assets/img/zdnet.png"
+        "imageUrl": "/public/assets/img/zdnet.png",
+        "imageUrlBlack": "/public/assets/img/zdnet_black.png"
     },
     {
         "_id": "lesechos",
         "feed": "Les Echos - Tech Medias",
         "url": "https://services.lesechos.fr/rss/les-echos-tech-medias.xml",
-        "imageUrl": "/public/assets/img/lesechos.png"
+        "imageUrl": "/public/assets/img/lesechos.png",
+        "imageUrlBlack": "/public/assets/img/lesechos_black.png"
     },
     {
         "_id": "cnet",
         "feed": "",
-        "url": "https://www.lemonde.fr/technologies/rss_full.xml",
-        "imageUrl": "/public/assets/img/cnet.png"
+        "url": "https://www.cnet.com/rss/news/",
+        "imageUrl": "/public/assets/img/cnet.png",
+        "imageUrlBlack": "/public/assets/img/cnet_black.png"
     }
 ]
