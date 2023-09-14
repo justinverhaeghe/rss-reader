@@ -11,6 +11,8 @@ $mediaSelects = array($feeds[0]);
 if (!empty($_GET['nbrArticles'])) {
     if ($_GET['nbrArticles'] == '6' || $_GET['nbrArticles'] == '9' || $_GET['nbrArticles'] == '12') {
         setcookie('nbrArticles', $_GET['nbrArticles'], (time() + 3600), '/');
+        header('location: home-ctrl.php');
+        exit;
     }
 }
 

@@ -59,20 +59,19 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mb-3">
-                        <button type="submit" class="btn btn-outline-light">Soumettre</button>
+                </div>
+                <div class="col-8 offset-2 text-center mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" name="darkmode" type="checkbox" role="switch" id="darkmode" <?= isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark' ? 'checked' : '' ?>>
+                        <label class="form-check-label" for="darkmode">
+                            <h2>Dark Mode</h2>
+                        </label>
                     </div>
                 </div>
+                <div class="col-12 mb-3">
+                    <button type="submit" class="btn btn-outline-light">Soumettre</button>
+                </div>
             </form>
-        </div>
-        <hr>
-        <div class="col-8 offset-2 text-center">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="darkmode">
-                <label class="form-check-label" for="darkmode">
-                    <h2>Dark Mode</h2>
-                </label>
-            </div>
         </div>
     </div>
 </div>

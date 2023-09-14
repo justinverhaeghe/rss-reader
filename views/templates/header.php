@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr-FR"
+    data-bs-theme="<?= isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark' ? 'dark' : 'light' ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +25,15 @@
                             id="mainLogo"></a>
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-moon" title="Pas encore opé ;)"></i>
+                    <form action="" method="get">
+                        <button>
+                            <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark') { ?>
+                            <i class="fa-solid fa-moon"></i>
+                            <?php } else { ?>
+                            <i class="fa-solid fa-sun"></i>
+                            <?php } ?>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
