@@ -46,7 +46,7 @@
         <div class="d-flex justify-content-center">
             <img src="<?= $image ?>" alt="<?= 'logo' ?>" class="img-fluid p-5">
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-2">
+        <div class="row row-cols-1 row-cols-sm-2 justify-content-sm-center row-cols-md-3 g-2">
             <?php $articles = fnFeed($value['url'], $display);
             for ($j = 0; $j < $display; $j++) {
                 $title = $articles[$j][0];
