@@ -25,15 +25,13 @@
                             id="mainLogo"></a>
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <form action="" method="get">
-                        <button>
-                            <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark') { ?>
-                            <i class="fa-solid fa-moon"></i>
-                            <?php } else { ?>
-                            <i class="fa-solid fa-sun"></i>
-                            <?php } ?>
-                        </button>
-                    </form>
+                    <button>
+                        <?php if (isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] == 'dark') { ?>
+                        <i class="fa-solid fa-moon"></i>
+                        <?php } else { ?>
+                        <i class="fa-solid fa-sun"></i>
+                        <?php } ?>
+                    </button>
                 </div>
             </div>
         </div>
