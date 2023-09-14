@@ -1,0 +1,87 @@
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #c0bdbd;
+    color: white;
+}
+
+#mainLogo {
+    height: 20vh;
+}
+
+.fa-gears {
+    font-size: xx-large;
+    color: #303841;
+}
+.fa-moon {
+    font-size: xx-large;
+    color: #303841;
+}
+
+#feeds {
+    border-top: #303841 1px solid;
+}
+
+footer p {
+    font-size: small;
+}
+
+#parametersPage {
+    min-height: 60vh;
+    border-top: 1px solid black;
+}
+
+.submitBtn {
+    background-color: #303841;
+    color: white;
+}
+
+label {
+    cursor: pointer;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#backTop {
+    position: fixed;
+    top: 90vh;
+    left: 92vw;
+    font-size: 48px;
+    color: white;
+}
+
+.fa-circle-up {
+    filter: drop-shadow(0px 3px 5px #000);
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-top {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+    #backTop {
+        position: fixed;
+        top: 90vh;
+        left: 85vw;
+        font-size: 36px;
+        color: white;
+    }
+    .fa-circle-up {
+        filter: drop-shadow(0px 3px 5px #000);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-img-top {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+}
