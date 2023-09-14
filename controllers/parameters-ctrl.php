@@ -26,7 +26,18 @@ if (isset($_POST['nbrArticles'])) {
     }
 }
 
+setcookie('darkmode', 'light', (time() + 3600), '/');
+if (isset($_POST['darkmode'])) {
+    $darkMode = trim(htmlspecialchars($_POST['darkmode']));
+    if ($darkMode == 'on') {
+        setcookie('darkmode', 'dark', (time() + 3600), '/');
+    }
+}
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    header('location: home-ctrl.php');
+    exit;
+}
 
 include __DIR__ . '/../views/templates/header.php';
 include __DIR__ . '/../views/parameters.php';
