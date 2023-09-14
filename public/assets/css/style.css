@@ -8,7 +8,7 @@ header {
 }
 
 #mainLogo {
-    height: 15vh;
+    height: 20vh;
 }
 
 .fa-gears {
@@ -19,19 +19,18 @@ header {
     font-size: xx-large;
     color: #303841;
 }
-.parameters {
-    background-color: #303841;
-    color: white;
+
+#feeds {
+    border-top: #303841 1px solid;
 }
+
 footer p {
     font-size: small;
 }
 
 #parametersPage {
-    background-color: #c0bdbd;
     min-height: 60vh;
     border-top: 1px solid black;
-    color: white;
 }
 
 .submitBtn {
@@ -41,4 +40,10 @@ footer p {
 
 label {
     cursor: pointer;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }

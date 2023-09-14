@@ -6,7 +6,7 @@ $script_js = 'home';
 
 $json = file_get_contents('../config/feeds.json');
 $feeds = json_decode($json, true);
-$mediaSelects = array($feeds[0]);
+$mediaSelects = array($feeds[0], $feeds[1], $feeds[3]);
 
 if (!empty($_GET['nbrArticles'])) {
     if ($_GET['nbrArticles'] == '6' || $_GET['nbrArticles'] == '9' || $_GET['nbrArticles'] == '12') {
